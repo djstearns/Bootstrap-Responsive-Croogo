@@ -1,5 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php 
+		if(isset($this->Facebook)){
+			echo $this->Facebook->html();
+		}else{
+			echo '<!DOCTYPE html><html lang="en">';
+		}
+?>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
@@ -69,4 +74,7 @@
 		echo $this->Js->writeBuffer();
 		?>
 	</body>
+     <?php if(isset($this->Facebook)){
+		echo $this->Facebook->init();
+	}?>
 </html>

@@ -10,7 +10,6 @@
 
 		$formUrl = array(
 			'controller' => 'comments',
-			'plugin' => 'comments',
 			'action' => 'add',
 			$node['Node']['id'],
 		);
